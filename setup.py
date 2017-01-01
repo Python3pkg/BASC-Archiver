@@ -21,7 +21,7 @@ with codecs.open('README.rst') as file:
 
 setup(
     name='BASC-Archiver',
-    version='0.9.5',
+    version='0.9.6',
     description='Makes a complete archive of imageboard threads including images, HTML, and JSON.',
     long_description=long_description,
     author='Lawrence Wu <sagnessagiel@gmail.com>, Daniel Oaks <daniel@danieloaks.net>',
