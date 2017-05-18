@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Site-Specific Archiver Base Class
-
-
+from __future__ import print_function
+from __future__ import absolute_import
 
 import os
 import time
@@ -140,7 +140,7 @@ class BaseSiteArchiver(object):
     @property
     def existing_threads(self):
         """Return how many threads we have and are downloading."""
-        return len([thread for thread in list(self.threads.values()) if thread['alive']])
+        return len([thread for thread in self.threads.values() if thread['alive']])
 
     @property
     def files_to_download(self):
